@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin: 0;
+}
+
+#puzzle-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 320px;
+    height: 320px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.cell {
+    width: 80px;
+    height: 80px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    box-sizing: border-box;
+}
+
+.correct {
+    background-color: lightgreen;
+}
+
+#distance {
+    margin: 0;
+}

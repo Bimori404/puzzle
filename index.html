@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzle I.A.</title>
+
+    <link rel="stylesheet" href="disenio.css">
+</head>
+
+<body>
+
+    <!--
+    medir distancias entre piezas ( listo )
+    crear funcion para mover las cells con WASD o con las flechas del teclado ( listo )
+    mostrar de color difrente las piezas correctas ( listo )
+    generar distribucion diferente en cada ejecucion ( listo )
+
+    bug: al momento de mover la cell15 o la cel12 al lugar vacio es imposible moverlas a otro lugar
+        (esto solo ocurre cuando se utiliza el mause)
+
+    Generar una lista de las distancias
+            [12, 1,  2,  15],
+            [11, 6,  5,  8],
+            [7,  10, 9,  4],
+            [0,  13, 14, 3]
+
+            pz = dis
+            12 = 16 , 1 = 2 , 2 = 3 , 15 = 15
+    -->
+
+    <div id="puzzle-container">
+        <br>
+        <p id="distance"> Distancia total entre piezas: .... </p>
+        <p id="current-distance"></p>
+        <fieldset>
+            <div class="container" id="puzzle">
+                <!-- aca se genera el juego -->
+            </div>
+        </fieldset>
+        <br>
+    </div>
+<script src="funcionalidad.js"></script>
+</body>
+
+</html>
